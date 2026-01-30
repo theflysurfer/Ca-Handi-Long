@@ -13,7 +13,7 @@ const Format: React.FC = () => {
             Le Format <span className="text-brand-orange">Armando</span>
           </h2>
           <p className="text-xl text-brand-navy/60 max-w-2xl mx-auto">
-            Un format classique de l'improvisation Chicagoienne, réinventé pour donner la parole.
+            Un format classique venu de Chicago, pour permettre de s'appuyer sur l'authenticité des témoignages de nos monologuistes.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ const Format: React.FC = () => {
             <div className="md:text-right order-2 md:order-1">
               <h3 className="font-display font-bold text-2xl text-brand-navy mb-3">Le Monologue</h3>
               <p className="text-brand-navy/70 leading-relaxed">
-                Tout commence par un mot, une suggestion du public. L'invité (l'Armando) raconte une anecdote personnelle, une tranche de vie vraie et authentique inspirée par ce mot.
+                L'invité, en situation de handicap, raconte une anecdote personnelle, une tranche de vie vraie et authentique.
               </p>
             </div>
 
@@ -99,7 +99,7 @@ const Format: React.FC = () => {
             <div className="md:text-right order-2 md:order-1">
               <h3 className="font-display font-bold text-2xl text-brand-navy mb-3">La Magie de l'Instant</h3>
               <p className="text-brand-navy/70 leading-relaxed">
-                Ce ne sont pas des reconstitutions, mais des interprétations libres. On voyage de l'anecdote concrète vers l'imaginaire débridé, créant un spectacle unique et éphémère.
+                Créant un spectacle unique et éphémère issu des inspirations et parcours de vie des différents comédiens et comédiennes au plateau.
               </p>
             </div>
 
@@ -110,7 +110,7 @@ const Format: React.FC = () => {
                 className="bg-brand-purple/5 border border-brand-purple/20 p-8 rounded-3xl relative overflow-hidden"
               >
                 <Sparkles className="w-12 h-12 text-brand-purple mb-4" />
-                <p className="font-handwriting text-brand-blue font-bold text-lg italic">
+                <p className="font-handwriting text-brand-purple font-bold text-lg italic">
                   Réalisme + Abstraction = Émotion
                 </p>
                 {/* Decoration */}

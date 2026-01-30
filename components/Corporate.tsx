@@ -43,7 +43,7 @@ const Corporate: React.FC = () => {
                   <CheckCircle2 className="w-6 h-6 text-brand-purple flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-white">Débriefing inclus</h4>
-                    <p className="text-gray-400 text-sm mt-1">Échange privilégié avec l'Armando et les comédiens après le show.</p>
+                    <p className="text-gray-400 text-sm mt-1">Échange privilégié avec les comédiens après le show.</p>
                   </div>
                 </li>
              </ul>

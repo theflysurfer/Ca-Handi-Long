@@ -60,10 +60,6 @@ const Team: React.FC = () => {
                       </div>
                     )}
 
-                    {/* Badge PSH */}
-                    <div className="absolute top-4 right-4 bg-brand-orange text-white px-3 py-1 rounded-full text-xs font-bold">
-                      PSH
-                    </div>
                   </div>
 
                   {/* Content */}

@@ -21,7 +21,7 @@ export const teamData: TeamMember[] = [
     type: 'founder',
     bio: 'Comédien passionné d\'improvisation, Philippe est à l\'origine du projet Ça Handi Long. En fauteuil roulant depuis 15 ans, il apporte son authenticité et son humour sur scène.',
     disability: 'Utilisateur de fauteuil roulant',
-    image: '/images/team/placeholder-1.jpg',
+    image: '',
     social: {
       linkedin: 'https://linkedin.com/in/philippebassot'
     }
@@ -33,7 +33,7 @@ export const teamData: TeamMember[] = [
     type: 'founder',
     bio: 'Passionné d\'improvisation et de sensibilisation, il co-crée Ça Handi Long pour donner une voix authentique aux personnes en situation de handicap.',
     disability: 'Personne en situation de handicap',
-    image: '/images/team/placeholder-2.jpg'
+    image: ''
   },
   {
     id: 'founder-3',
@@ -42,7 +42,7 @@ export const teamData: TeamMember[] = [
     type: 'founder',
     bio: 'Troisième pilier de Ça Handi Long, il apporte son expérience du théâtre d\'improvisation pour créer des spectacles uniques et inclusifs.',
     disability: 'Personne en situation de handicap',
-    image: '/images/team/placeholder-3.jpg'
+    image: ''
   }
 ];
 

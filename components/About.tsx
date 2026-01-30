@@ -44,19 +44,18 @@ const About: React.FC = () => {
                 Nous avons créé ce spectacle pour permettre de parler de handicap par du <strong>drôle</strong>, de <strong>l'émotionnel</strong> et surtout de <strong>l'authentique</strong>.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Nos spectacles sont l’opportunité d’être rejoints par une équipe de comédiens et comédiennes motivée pour amener une réflexion globale sur le handicap, <span className="underline decoration-brand-purple decoration-2 underline-offset-2">qu’on soit valide ou non</span>.
+                Nos spectacles amènent une réflexion globale sur le handicap, pour les comédiens et comédiennes comme pour le public, <span className="underline decoration-brand-purple decoration-2 underline-offset-2">quelque soit notre rapport avec ce sujet</span>.
               </p>
             </div>
             
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                  <div className="bg-brand-blue/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center">
-                    <span className="font-display font-black text-4xl text-brand-navy mb-2">3</span>
-                    <span className="text-sm font-bold uppercase text-brand-purple">Fondateurs PSH</span>
+                    <span className="text-sm font-bold text-brand-purple text-center leading-tight">Spectacle joué dans toute la France (Paris, Lyon, Marseille, Bordeaux, Grenoble, Thonon, Nancy, Lille...)</span>
                  </div>
                  <div className="bg-brand-purple/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center mt-8">
-                    <span className="font-display font-black text-4xl text-brand-navy mb-2">∞</span>
-                    <span className="text-sm font-bold uppercase text-brand-purple">Comédiens Guests</span>
+                    <span className="font-display font-black text-4xl text-brand-navy mb-2">50+</span>
+                    <span className="text-sm font-bold text-brand-purple text-center leading-tight">Improvisateurs et improvisatrices invité.e.s</span>
                  </div>
                  <div className="bg-brand-orange/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center -mt-8">
                     <span className="font-display font-black text-4xl text-brand-navy mb-2">100%</span>
@@ -64,7 +63,7 @@ const About: React.FC = () => {
                  </div>
                  <div className="bg-brand-beige p-6 rounded-2xl flex flex-col items-center justify-center text-center">
                     <Star className="w-8 h-8 text-brand-orange mb-2" fill="currentColor" />
-                    <span className="text-sm font-bold uppercase text-brand-purple">Primé en 2025</span>
+                    <span className="text-sm font-bold text-brand-purple text-center leading-tight">Primé en 2025 au festival d'Impro En Seine</span>
                  </div>
               </div>
             </div>
@@ -92,7 +91,7 @@ const About: React.FC = () => {
             />
             <Testimonial 
               name="Meng Wang"
-              role="Spectatrice"
+              role="Spectateur"
               source="Wonder Impro Festival"
               text="J'ai adoré Ça Handi Long ! Un spectacle drôle et touchant de la première à la dernière minute. En plus, il nous fait réfléchir sur notre propre rapport aux personnes en situation de handicap."
             />

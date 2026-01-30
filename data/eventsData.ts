@@ -33,7 +33,7 @@ export const eventsData: Event[] = [
   },
   {
     id: 'marseille-nov-2025',
-    name: 'Les Fées Aroulettes - Marseille',
+    name: 'Événement ADAPT - Marseille',
     date: '2025-11-21',
     location: 'Marseille',
     city: 'Marseille',
@@ -42,7 +42,7 @@ export const eventsData: Event[] = [
     type: 'spectacle',
     status: 'past',
     description: 'Spectacle aux Fées Aroulettes à Marseille. Un public chaleureux et une ambiance méditerranéenne inoubliable !',
-    venue: 'Les Fées Aroulettes',
+    venue: 'Mairie de Marseille 13ème et 14ème',
     images: [
       '/images/events/marseille-nov-2025/Copy of LesFeesAroulettes (1).webp',
       '/images/events/marseille-nov-2025/Copy of LesFeesAroulettes (3).webp',
@@ -187,6 +187,23 @@ export const eventsData: Event[] = [
   }
 ];
 
-export const getUpcomingEvents = () => eventsData.filter(e => e.status === 'upcoming');
-export const getPastEvents = () => eventsData.filter(e => e.status === 'past');
-export const getEventById = (id: string) => eventsData.find(e => e.id === id);
+// Calcule automatiquement le statut basé sur la date
+const getEventStatus = (event: Event): 'past' | 'upcoming' => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const eventDate = event.endDate ? new Date(event.endDate) : new Date(event.date);
+  return eventDate < today ? 'past' : 'upcoming';
+};
+
+// Retourne les événements avec le statut calculé automatiquement
+export const getEventsWithAutoStatus = () => eventsData.map(e => ({
+  ...e,
+  status: getEventStatus(e)
+}));
+
+export const getUpcomingEvents = () => getEventsWithAutoStatus().filter(e => e.status === 'upcoming');
+export const getPastEvents = () => getEventsWithAutoStatus().filter(e => e.status === 'past');
+export const getEventById = (id: string) => {
+  const event = eventsData.find(e => e.id === id);
+  return event ? { ...event, status: getEventStatus(event) } : undefined;
+};

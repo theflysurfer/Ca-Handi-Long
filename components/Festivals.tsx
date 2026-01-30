@@ -37,6 +37,27 @@ const festivals = [
     type: "Stage + Spectacle",
     year: "2025",
     color: "text-brand-blue"
+  },
+  {
+    name: "Théâtre la Petite Croisée des Chemins",
+    location: "Paris",
+    type: "Spectacle Seul",
+    year: "2026",
+    color: "text-brand-orange"
+  },
+  {
+    name: "SDI (Semaine De l'Impro)",
+    location: "Nancy",
+    type: "Spectacle Seul",
+    year: "2026",
+    color: "text-brand-purple"
+  },
+  {
+    name: "TBC",
+    location: "Lille",
+    type: "Spectacle Seul",
+    year: "2026",
+    color: "text-brand-blue"
   }
 ];
 
