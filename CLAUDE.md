@@ -15,27 +15,29 @@ Site vitrine pour le spectacle d'improvisation inclusif "Ça Handi Long".
 
 ## Déploiement
 
-### 1. Build
+### VPS Hostinger
+
+- **SSH** : `automation@69.62.108.82`
+- **Config Nginx** : `/etc/nginx/sites-enabled/ca-handi-long`
+- **Root** : `/home/automation/apps/ca-handi-long/dist`
+- **SSL** : Let's Encrypt (auto-renew)
+
+### Commandes de déploiement
 
 ```bash
+# 1. Build local
 npm run build
+
+# 2. Upload sur le serveur
+scp -r dist/* automation@69.62.108.82:/home/automation/apps/ca-handi-long/dist/
 ```
 
-Le build génère le dossier `dist/` avec les fichiers statiques.
-
-### 2. Déployer sur VPS Hostinger
+### SSH direct
 
 ```bash
-# Build local
-npm run build
-
-# Upload sur le serveur
-scp -r dist/* srv759970:/home/automation/apps/ca-handi-long/dist/
+ssh automation@69.62.108.82
+cd /home/automation/apps/ca-handi-long
 ```
-
-**Config Nginx**: `/etc/nginx/sites-enabled/ca-handi-long`
-**Root**: `/home/automation/apps/ca-handi-long/dist`
-**SSL**: Let's Encrypt (auto-renew)
 
 ## Collaborateurs
 
