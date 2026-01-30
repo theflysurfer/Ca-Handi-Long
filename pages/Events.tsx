@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { Calendar, MapPin, Ticket, Clock, Info, Images } from 'lucide-react';
-import { eventsData, getUpcomingEvents, getPastEvents } from '../data/eventsData';
+import { getEventsWithAutoStatus, getUpcomingEvents, getPastEvents } from '../data/eventsData';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -35,8 +35,9 @@ const Events: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'past' | 'upcoming'>('all');
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
 
+  const allEvents = getEventsWithAutoStatus();
   const filteredEvents = filter === 'all'
-    ? eventsData
+    ? allEvents
     : filter === 'upcoming'
       ? getUpcomingEvents()
       : getPastEvents();
@@ -88,7 +89,7 @@ const Events: React.FC = () => {
                     : 'bg-brand-beige text-brand-navy hover:bg-brand-navy/10'
                 }`}
               >
-                Tous ({eventsData.length})
+                Tous ({allEvents.length})
               </button>
               <button
                 onClick={() => setFilter('upcoming')}

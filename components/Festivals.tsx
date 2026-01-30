@@ -2,62 +2,60 @@ import React from 'react';
 import { Calendar, MapPin, Ticket, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+// Code couleur: Spectacle Seul = purple, Stage + Spectacle = orange
+const getColorByType = (type: string) => {
+  if (type === "Stage + Spectacle") return "text-brand-orange";
+  return "text-brand-purple"; // Spectacle Seul
+};
+
 const festivals = [
   {
     name: "Wonder Impro Festival",
     location: "Paris (75)",
     type: "Spectacle Seul",
-    year: "2025",
-    color: "text-brand-purple"
+    year: "2025"
   },
   {
     name: "Festival Impro Libre",
     location: "Seine-et-Marne (77)",
     type: "Spectacle Seul",
-    year: "2025",
-    color: "text-brand-blue"
+    year: "2025"
   },
   {
     name: "Impro en Seine",
     location: "Paris (75)",
     type: "Spectacle Seul",
-    year: "2025",
-    color: "text-brand-orange"
+    year: "2025"
   },
   {
     name: "Impro sur Cour",
     location: "Isère (38)",
     type: "Spectacle Seul",
-    year: "2025",
-    color: "text-brand-purple"
+    year: "2025"
   },
   {
     name: "CIL Good Festival",
     location: "Haute-Savoie (74)",
     type: "Stage + Spectacle",
-    year: "2025",
-    color: "text-brand-blue"
+    year: "2025"
   },
   {
     name: "Théâtre la Petite Croisée des Chemins",
     location: "Paris",
     type: "Spectacle Seul",
-    year: "2026",
-    color: "text-brand-orange"
+    year: "2026"
   },
   {
     name: "SDI (Semaine De l'Impro)",
     location: "Nancy",
     type: "Spectacle Seul",
-    year: "2026",
-    color: "text-brand-purple"
+    year: "2026"
   },
   {
     name: "TBC",
     location: "Lille",
     type: "Spectacle Seul",
-    year: "2026",
-    color: "text-brand-blue"
+    year: "2026"
   }
 ];
 
@@ -107,7 +105,7 @@ const Festivals: React.FC = () => {
                 {festival.location}
               </div>
 
-              <div className={`flex items-center gap-2 text-sm font-bold ${festival.color}`}>
+              <div className={`flex items-center gap-2 text-sm font-bold ${getColorByType(festival.type)}`}>
                 <Ticket className="w-4 h-4" />
                 {festival.type}
               </div>

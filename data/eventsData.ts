@@ -83,7 +83,7 @@ export const eventsData: Event[] = [
   },
   {
     id: 'wonder-impro-2025',
-    name: 'Wonder Impro Festival',
+    name: 'Wonder Impro Festival - Paris',
     date: '2025-02-26',
     endDate: '2025-03-02',
     location: 'Paris',
@@ -92,7 +92,7 @@ export const eventsData: Event[] = [
     coordinates: [48.8991, 2.3598], // Halle Pajol
     type: 'spectacle',
     status: 'past',
-    description: 'Ça Handi Long au Wonder Impro Festival, le premier festival inclusif et féministe d\'improvisation théâtrale de France. Prix "Meilleur Spectacle Engagé" à Impro en Seine 2025.',
+    description: 'Ça Handi Long au Wonder Impro Festival, le premier festival inclusif et féministe d\'improvisation théâtrale de France.',
     venue: 'Auditorium de la Halle Pajol',
     images: [
       '/images/events/wonder-impro-2025/IMG-20250305-WA0011.webp',
@@ -119,7 +119,7 @@ export const eventsData: Event[] = [
     coordinates: [48.8708, 2.3297], // Théâtre du Gymnase
     type: 'spectacle',
     status: 'upcoming',
-    description: 'Festival d\'improvisation majeur de Paris - 12ème édition. Ça Handi Long présente son format Armando unique avec captation vidéo professionnelle.',
+    description: 'Festival d\'improvisation majeur de Paris - 12ème édition. Prix "Meilleur Spectacle Engagé" 2025. Ça Handi Long présente son format Armando unique avec captation vidéo professionnelle.',
     venue: 'Théâtre du Gymnase Marie-Bell',
     images: []
   },

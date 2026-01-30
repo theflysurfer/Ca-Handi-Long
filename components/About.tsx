@@ -50,18 +50,19 @@ const About: React.FC = () => {
             
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                 <div className="bg-brand-blue/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center">
-                    <span className="text-sm font-bold text-brand-purple text-center leading-tight">Spectacle joué dans toute la France (Paris, Lyon, Marseille, Bordeaux, Grenoble, Thonon, Nancy, Lille...)</span>
+                 <div className="bg-brand-blue/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center min-h-[140px]">
+                    <span className="font-display font-bold text-lg text-brand-navy mb-1">Partout en France</span>
+                    <span className="text-xs text-brand-purple text-center leading-tight">Paris, Lyon, Marseille, Bordeaux, Grenoble, Thonon, Nancy, Lille</span>
                  </div>
-                 <div className="bg-brand-purple/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center mt-8">
+                 <div className="bg-brand-purple/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center min-h-[140px]">
                     <span className="font-display font-black text-4xl text-brand-navy mb-2">50+</span>
                     <span className="text-sm font-bold text-brand-purple text-center leading-tight">Improvisateurs et improvisatrices invité.e.s</span>
                  </div>
-                 <div className="bg-brand-orange/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center -mt-8">
+                 <div className="bg-brand-orange/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center min-h-[140px]">
                     <span className="font-display font-black text-4xl text-brand-navy mb-2">100%</span>
                     <span className="text-sm font-bold uppercase text-brand-purple">Improvisé</span>
                  </div>
-                 <div className="bg-brand-beige p-6 rounded-2xl flex flex-col items-center justify-center text-center">
+                 <div className="bg-brand-beige p-6 rounded-2xl flex flex-col items-center justify-center text-center min-h-[140px]">
                     <Star className="w-8 h-8 text-brand-orange mb-2" fill="currentColor" />
                     <span className="text-sm font-bold text-brand-purple text-center leading-tight">Primé en 2025 au festival d'Impro En Seine</span>
                  </div>
